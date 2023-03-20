@@ -1,0 +1,130 @@
+ * {
+    font-family: 'Poppins' , sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ :root {
+    --primary: rgb(25, 204, 132);
+    --accent: #e46018;
+  }
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(74,168,100,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+.profile-card {
+    max-width: 350px;
+    width: 100%;
+    background: rgba(2,0,36,0.1);
+    padding: 10px;
+    border-radius: 25px;
+    position: relative;
+}
+ .image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    padding: 2px;
+    border-radius: 25px;
+    margin: 0 auto;
+ }
+
+ .image .profile-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    padding: 5px;
+   
+   
+ }
+
+ .profile-card .text-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .text-data .name {
+    font-size: 1.5rem;
+    font-weight: 500;
+ }
+
+ .text-data .job {
+    font-size: 0.8rem;
+    font-weight:lighter;
+ }
+
+ .media-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+ }
+ .media-button a {
+    margin-left: 15px;
+    color: white;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+ }
+
+ .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+ }
+
+ .buttons button {
+    border: none;
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color:rgba(2,0,36,0.5);
+    color: white;
+    border-radius: 25px;
+    
+ }
+
+ .buttons button:hover {
+    background-color:var(--accent);
+    color: white;
+    transition: all 0.5s ease;
+ }
+
+ .analytics {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+ }
+
+ .analytics div {
+    padding: 0px 15px;
+    border-left : 1px solid rgb(192, 191, 191) ;
+ }
+
+ .analytics div:first-child{
+    border: none;
+ }
+
+
+.profile-card::after{
+    content: "";
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    bottom: 0;
+    left:0;
+    z-index: -1;
+    border-radius: 25px;
+}
